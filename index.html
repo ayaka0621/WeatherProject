@@ -21,7 +21,31 @@
   <body>
     <div class="container">
       <div class="aroundLine">
-        <h1>New York</h1>
+        <form class="row g-3">
+          <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input
+              type="text"
+              readonly
+              class="form-control-plaintext"
+              id="staticEmail2"
+            />
+          </div>
+          <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword2"
+              placeholder="Password"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Search</button>
+          </div>
+        </form>
+
+        <h1 id="city">New York</h1>
         <ul>
           <li class="day">Friday <span class="time">10:00</span></li>
           <li class="weatherDiscription">Clear sky</li>
@@ -35,15 +59,18 @@
           </div>
           <div class="col">
             <ul>
-              <li>Precipitation:0%</li>
-              <li>Humidity:72%</li>
-              <li>Wind:2 Km/H</li>
+              <li id="humid">Humidity:72%</li>
+              <li id="wind">Wind:2 Km/H</li>
             </ul>
           </div>
         </div>
-
-        <script src="src/app.js"></script>
       </div>
     </div>
+    <p>
+      <a href="https://github.com/ayaka0621/WeatherProject">Open-source code</a>
+      by Ayaka Sano
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
