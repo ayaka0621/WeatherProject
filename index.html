@@ -21,38 +21,31 @@
   <body>
     <div class="container">
       <div class="aroundLine">
-        <form class="row g-3">
-          <div class="col-auto">
-            <label for="staticEmail2" class="visually-hidden">Email</label>
-            <input
-              type="text"
-              readonly
-              class="form-control-plaintext"
-              id="staticEmail2"
-            />
-          </div>
-          <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="inputPassword2"
-              placeholder="Password"
-            />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Search</button>
+        <form class="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Type a city..."
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
           </div>
         </form>
 
         <h1 id="city">New York</h1>
+
         <ul>
-          <li class="day">Friday <span class="time">10:00</span></li>
+          <li id="date"></li>
           <li class="weatherDiscription">Clear sky</li>
         </ul>
         <div class="row">
           <div class="col">
-            <i class="fa-sharp fa-solid fa-sun"></i>
+            <img src="" alt="Clear" id="icon" />
             <span class="currenttemperature">5</span>
             <span class="celsius">°<a href="#">C</a> |</span>
             <span class="fahrenheit">°<a href="#">F</a></span>

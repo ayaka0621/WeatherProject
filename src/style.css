@@ -26,13 +26,19 @@ a {
 }
 
 h1 {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 form {
   position: relative;
-  top: 65px;
-  padding-left: 70px;
+  padding-left: 180px;
+
+  margin-bottom: -40px;
+  margin-top: 20px;
 }
+.form-control {
+  margin-left: 15px;
+}
+
 .fa-sharp {
   color: orange;
   font-size: 50px;
