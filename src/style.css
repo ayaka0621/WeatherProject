@@ -48,3 +48,8 @@ form {
   font-size: 50px;
   padding-left: 3px;
 }
+
+.active {
+  color: black;
+  cursor: default;
+}
